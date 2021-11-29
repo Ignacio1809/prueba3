@@ -1,0 +1,103 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img id="imagen" src="{% static 'img/turismo.png' %}">
+            <a class="navbar-brand" href="#">Turismo Real</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de la empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login">Iniciar sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<br>
+<div style="text-align: center">
+    <h1>Bienvenido a Turismo Real</h1>
+    <div class="badge badge-secondary">
+        <h5>Por favor Inicia Sesión</h5>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<form action="#" id="formulario" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="exampleInputEmail1">Usuario</label>
+        <input required type="text" name="usuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña</label>
+        <input required type="password" class="form-control" name="clave" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Recordarme.</label>
+    </div>
+    <a class="btn btn-primary" href="inicio" role="button">Ingresar</a>
+    <a class="btn btn-primary" href="registrarse" role="button">Registrarse</a>
+</form>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i><img src="{% static 'img/facebook.png' %}" style="width: 30px"></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-instagram"></i><img src="{% static 'img/instagram.png' %}" style="width: 30px"></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i><img
+                    src="{% static 'img/twitter.png' %}" style="width: 30px"></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © Empresa Turismo Real. Todos los derechos reservados 2021
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+

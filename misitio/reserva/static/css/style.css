@@ -1,0 +1,35 @@
+
+.img-footer{
+    width: 32px;
+    
+}
+#donas{
+    width: 32px;
+    margin-right: 10px;
+}
+
+
+#final_pedido{
+    width: 600px;
+    height: 350px;
+}
+
+#div-final{
+    border: 3px solid;
+    color: black;
+    
+}
+
+#imagen{
+    text-align: center;
+}
+
+.img_carrusel{
+    width: 1400px;
+    height: 1100px;
+}
+
+#img_pucon{
+    width: 600px;
+    height: 600px;
+}
